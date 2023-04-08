@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Losowanie liczby</title>
+  </head>
+  <body>
+    <h1>Losowanie liczby od 0 do 5000</h1>
+    <p>Naciśnij przycisk, aby wylosować liczbę od 0 do 5000:</p>
+    <button onclick="losujLiczbe()">Losuj liczbę</button>
+    <p id="wynik"></p>
+    <script>
+      function losujLiczbe() {
+        var liczba = Math.floor(Math.random() * 5001);
+        document.getElementById("wynik").innerHTML = "Wylosowana liczba to: " + liczba;
+      }
+    </script>
+  </body>
+</html>
